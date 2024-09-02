@@ -10,6 +10,8 @@ def cp_choice(computer_hand):
     while hit_or_stand_cp:
         if 21-sum(computer_hand) >random.randint(2,8):
             computer_hand.append(int(random.choice(card)))
+            if sum(computer_hand)> 21 and 11 in computer_hand:
+                computer_hand.append(int(-10))
         else:
             hit_or_stand_cp = False    
 

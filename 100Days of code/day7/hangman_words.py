@@ -1,5 +1,5 @@
-def word_l():
-    word_list = [
+
+word_list = [
 'abruptly', 
 'absurd', 
 'abyss', 
